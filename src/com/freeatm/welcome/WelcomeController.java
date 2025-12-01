@@ -3,7 +3,7 @@ package com.freeatm.welcome;
 import com.freeatm.login.LoginController;
 import com.freeatm.registration.SignupController;
 
-public class WelcomeController implements IWeclomeViewController {
+public class WelcomeController implements IWelcomeViewController {
     private final WelcomeView welcomeView;
 
     public WelcomeController() {

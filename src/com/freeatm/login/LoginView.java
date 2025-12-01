@@ -16,8 +16,9 @@ public class LoginView extends BaseView {
     public void start() {
         Scanner scan = new Scanner(System.in);
         System.out.println("Enter you name:");
-        System.out.println("Enter the password");
         String name = scan.next();
+        System.out.println("Enter the password");
+
         String password = scan.next();
         iLoginViewController.login(name, password);
     }

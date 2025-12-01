@@ -5,9 +5,9 @@ import com.freeatm.base.BaseView;
 import java.util.Scanner;
 
 public class WelcomeView extends BaseView {
-    private final IWeclomeViewController iwelcomeviewcontroller;
+    private final IWelcomeViewController iwelcomeviewcontroller;
 
-    public WelcomeView(IWeclomeViewController iweclomeviewcontroller) {
+    public WelcomeView(IWelcomeViewController iweclomeviewcontroller) {
         this.iwelcomeviewcontroller = iweclomeviewcontroller;
     }
 

@@ -10,6 +10,7 @@ public class UserRepository {
     private static final List<User> users = new ArrayList<>();
 
     private UserRepository(){
+        users.add(new User("user", "user"));
     }
 
     public static UserRepository getInstance() {

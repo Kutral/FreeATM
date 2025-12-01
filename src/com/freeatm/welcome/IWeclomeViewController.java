@@ -1,6 +1,6 @@
 package com.freeatm.welcome;
 
-public interface IWeclomeViewController {
+public interface IWelcomeViewController {
     void option(int choice);
 
 

@@ -21,13 +21,13 @@ public class LoginController implements ILoginViewController, ILoginModelControl
     }
 
     @Override
-    public void userNotfound() {
+    public void onUserNotfound() {
         loginView.print("User not found");
 
     }
 
     @Override
-    public void userfound(User user) {
+    public void onUserfound(User user) {
          loginView.onLoginSuccess(user);
     }
 }

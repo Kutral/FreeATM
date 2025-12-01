@@ -5,5 +5,5 @@ import com.freeatm.dto.User;
 public interface ILoginModelController {
     void onUserNotfound();
 
-    void userfound(User user);
+    void onUserfound(User user);
 }
