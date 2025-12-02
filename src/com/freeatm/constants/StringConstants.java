@@ -1,7 +1,7 @@
 package com.freeatm.constants;
 
 public class StringConstants {
-    public static String[] WelcomeMessage = {"========================================\n" +
+    public static String[] WELCOME_MESSAGE = {"========================================\n" +
             "           Welcome to FreeATM\n" +
             "========================================"};
 
@@ -24,8 +24,7 @@ public class StringConstants {
             "1. Check Balance",
             "2. Cash Withdrawal",
             "3. Cash Deposit",
-            "4. Transfer Funds",
-            "5. Logout"
+            "4. Logout"
     };
 
     public static String BALANCE_IS = "Your balance is: ";
@@ -33,6 +32,4 @@ public class StringConstants {
     public static String DEPOSIT_SUCCESS = "Deposit successful.";
     public static String WITHDRAW_SUCCESS = "Withdrawal successful.";
     public static String INSUFFICIENT_FUNDS = "Insufficient funds.";
-    public static String TRANSFER_SUCCESS = "Transfer successful.";
-    public static String ENTER_TARGET_USER = "Enter username to transfer to: ";
 }

@@ -13,7 +13,7 @@ public class WelcomeView extends BaseView {
     }
 
     public void start() {
-        printAll(StringConstants.WelcomeMessage);
+        printAll(StringConstants.WELCOME_MESSAGE);
         printAll(StringConstants.WELCOME_OPTIONS);
 
         Scanner sc = new Scanner(System.in);
