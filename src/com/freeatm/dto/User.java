@@ -2,19 +2,29 @@ package com.freeatm.dto;
 
 public class User {
     private final String name;
-    private final String password;
+    private final String pin;
+    private double balance;
 
-    public User(String name, String password) {
+    public User(String name, String pin) {
         this.name = name;
-        this.password = password;
+        this.pin = pin;
+        this.balance = 0.0;
     }
 
-    public String getPassword() {
-        return password;
+    public String getPin() {
+        return pin;
     }
 
     public String getName() {
         return name;
+    }
 
-    }}
+    public double getBalance() {
+        return balance;
+    }
+
+    public void setBalance(double balance) {
+        this.balance = balance;
+    }
+}
 

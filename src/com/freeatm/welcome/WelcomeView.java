@@ -1,27 +1,25 @@
 package com.freeatm.welcome;
 
 import com.freeatm.base.BaseView;
+import com.freeatm.constants.StringConstants;
 
 import java.util.Scanner;
 
 public class WelcomeView extends BaseView {
     private final IWelcomeViewController iwelcomeviewcontroller;
 
-    public WelcomeView(IWelcomeViewController iweclomeviewcontroller) {
-        this.iwelcomeviewcontroller = iweclomeviewcontroller;
+    public WelcomeView(IWelcomeViewController iwelcomeviewcontroller) {
+        this.iwelcomeviewcontroller = iwelcomeviewcontroller;
     }
 
     public void start() {
+        printAll(StringConstants.WelcomeMessage);
+        printAll(StringConstants.WELCOME_OPTIONS);
 
-        System.out.println("========================================\n" +
-                "           Welcome to FreeATM\n" +
-                "========================================\n");
         Scanner sc = new Scanner(System.in);
-        System.out.println("1. Login\n" +
-                "2. Create New Account (Signup)\n" +
-                "3. Exit");
-        System.out.println("Enter your choice: ");
-        int choice = sc.nextInt();
+        String choiceStr = printQuestion(StringConstants.ENTER_CHOICE, sc);
+        int choice = Integer.parseInt(choiceStr);
+
         iwelcomeviewcontroller.option(choice);
     }
 

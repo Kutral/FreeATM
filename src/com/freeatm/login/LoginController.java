@@ -1,6 +1,8 @@
 package com.freeatm.login;
 
+import com.freeatm.constants.StringConstants;
 import com.freeatm.dto.User;
+import com.freeatm.home.HomeController;
 
 public class LoginController implements ILoginViewController, ILoginModelController {
     private final LoginView loginView;
@@ -22,12 +24,13 @@ public class LoginController implements ILoginViewController, ILoginModelControl
 
     @Override
     public void onUserNotfound() {
-        loginView.print("User not found");
+        loginView.print(StringConstants.USER_NOT_FOUND);
 
     }
 
     @Override
     public void onUserfound(User user) {
          loginView.onLoginSuccess(user);
+         new HomeController(user).start();
     }
 }

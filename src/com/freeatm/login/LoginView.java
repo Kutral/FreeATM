@@ -1,5 +1,6 @@
 package com.freeatm.login;
 
+import com.freeatm.constants.StringConstants;
 import com.freeatm.dto.User;
 import com.freeatm.base.BaseView;
 
@@ -15,16 +16,14 @@ public class LoginView extends BaseView {
 
     public void start() {
         Scanner scan = new Scanner(System.in);
-        System.out.println("Enter you name:");
-        String name = scan.next();
-        System.out.println("Enter the password");
+        String name = printQuestion(StringConstants.ENTER_NAME, scan);
+        String password = printQuestion(StringConstants.ENTER_PIN, scan);
 
-        String password = scan.next();
         iLoginViewController.login(name, password);
     }
 
     public void onLoginSuccess(User user) {
-            print("Logged in.");
-            print("Welcome " + user.getName());
+            print(StringConstants.LOGIN_SUCCESS);
+            print(StringConstants.WELCOME_USER + user.getName());
     }
 }

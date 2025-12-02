@@ -11,6 +11,7 @@ public class BaseView {
             System.out.println(s);
         }
     }
+
     public String printQuestion(String question, Scanner scanner) {
         System.out.println(question);
         return scanner.next();

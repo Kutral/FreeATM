@@ -16,7 +16,7 @@ public class LoginModel {
 
         User user = UserRepository.findByUsername(username);
         if (user == null)  iLoginModelController.onUserNotfound();
-        if (user != null && user.getPassword().equals(password)) {
+        if (user != null && user.getPin().equals(password)) {
             iLoginModelController.onUserfound(user);
         }
     }
