@@ -19,7 +19,7 @@ public class HomeController implements IHomeViewController, IHomeModelController
     @Override
     public void handleOption(int option) {
         switch (option) {
-            case 1: // Check Balance
+            case 1: // Balance
                 homeModel.getBalance();
                 break;
             case 2: // Withdrawal

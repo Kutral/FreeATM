@@ -18,14 +18,13 @@ public class HomeView extends BaseView {
         while(true) {
             printAll(StringConstants.HOME_MENU_OPTIONS);
             String choiceStr = printQuestion(StringConstants.ENTER_CHOICE, scanner);
-            try {
                 int choice = Integer.parseInt(choiceStr);
                 if (choice == 4) {
                     controller.logout();
                     break;
                 }
                 controller.handleOption(choice);
-            } catch (NumberFormatException e) {
+            if (choice < 1 || choice > 4) {
                 print("Invalid input");
             }
         }

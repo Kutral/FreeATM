@@ -13,7 +13,6 @@ public class LoginModel {
 
 
     public void validateCredential(String username, String password) {
-
         User user = UserRepository.findByUsername(username);
         if (user == null)  iLoginModelController.onUserNotfound();
         if (user != null && user.getPin().equals(password)) {

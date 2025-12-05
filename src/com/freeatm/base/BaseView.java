@@ -17,5 +17,4 @@ public class BaseView {
         return scanner.next();
 
     }
-
 }
