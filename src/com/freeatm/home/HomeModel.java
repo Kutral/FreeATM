@@ -1,7 +1,6 @@
 package com.freeatm.home;
 
 import com.freeatm.constants.StringConstants;
-import com.freeatm.database.UserRepository;
 import com.freeatm.dto.User;
 
 public class HomeModel {

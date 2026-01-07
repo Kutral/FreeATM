@@ -29,7 +29,6 @@ public class UserRepository {
         return null;
 
     }
-
     public boolean addUser(User user) {
         if (findByUsername(user.getName()) != null) {
             return false;

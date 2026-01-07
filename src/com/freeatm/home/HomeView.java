@@ -32,11 +32,7 @@ public class HomeView extends BaseView {
 
     public double askAmount() {
         String amountStr = printQuestion(StringConstants.ENTER_AMOUNT, scanner);
-        try {
             return Double.parseDouble(amountStr);
-        } catch (NumberFormatException e) {
-            return 0.0;
-        }
     }
 
     public void showBalance(double balance) {
